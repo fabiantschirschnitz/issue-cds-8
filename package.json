@@ -1,0 +1,28 @@
+{
+  "name": "CAP-FE-8",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^8",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/eslint-plugin-cds": "^3",
+    "eslint": "^9",
+    "cds-plugin-ui5": "0.10.0",
+    "cds-launchpad-plugin": "2.2.0",
+    "@sap/ux-specification": "1.120.9"
+  },
+  "sapux": [
+    "app/objpage_belege",
+    "app/listpage_belege"
+  ],
+  "scripts": {
+    "start": "cds-ts watch"
+  }
+}
+
