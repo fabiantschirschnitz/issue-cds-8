@@ -1,4 +1,5 @@
 using {com.dscgmbh.poc.replace_me as db} from '../db/schema';
+using {payint_s4hana as payint_s4hana} from '../srv/external/payints4hana';
 
 
 service main_service {
@@ -12,4 +13,5 @@ service main_service {
     };
 
   entity Arbeitsschritte as projection on db.Arbeitsschritte;
+  entity BusinessPartner as projection on payint_s4hana.A_BusinessPartner;
 };
